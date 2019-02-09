@@ -1,0 +1,38 @@
+//Menu
+
+@mixin easeout {
+  transition: all 1.5s ease-out;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeout;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeout;
+  }
+  //Rotate into x with Menu Lines
+  &.close {
+    transform: rotate(180deg);
+    .btn-line {
+      //Line1 -Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(1px, 11px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(135deg) translate(0, 10px);
+      }
+    }
+  }
+}
