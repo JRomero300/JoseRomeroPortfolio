@@ -1,34 +1,5 @@
 @import "menu";
-
-$primary-color: #444;
-$show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
-
-@mixin easeout {
-  transition: all 1.5s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
-    }
-  }
-}
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -37,7 +8,8 @@ $background-opacity: 0.9;
 body {
   @include background();
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
+  height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -81,7 +53,7 @@ main {
       padding: 0.4rem;
       &:hover {
         color: #eece1a;
-        @include easeout();
+        @include easeOut();
       }
     }
   }
@@ -92,3 +64,5 @@ main {
     }
   }
 }
+
+@import "mobile";

@@ -1,4 +1,5 @@
 //Menu
+@import "config";
 $primary-color: #444;
 $secondary-color: #eece1a;
 
@@ -18,7 +19,7 @@ $secondary-color: #eece1a;
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeout;
   }
   //Rotate into x with Menu Lines
@@ -87,7 +88,7 @@ $secondary-color: #eece1a;
       opacity: 1;
       width: 250px;
       height: 250px;
-      background: url("../img/Jose1.jpg");
+      background: url("../img/JosePortrait.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
