@@ -1,10 +1,9 @@
 {
-  "name": "modern_portfolio",
+  "name": "joseromeroportfolio",
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
-  "homepage":"https://JRomero300.github.io/JoseRomeroPortfolio",
-
+  "homepage": "https://JRomero300.github.io/joseromeroportfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
