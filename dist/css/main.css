@@ -267,7 +267,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/josesmall.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
@@ -281,6 +281,10 @@ main {
     padding: 2rem; }
     main #home h1 {
       margin-top: 10vh; }
+    main .boxes .email {
+      font-size: 1rem; }
+    main .boxes .phone {
+      font-size: 1rem; }
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
