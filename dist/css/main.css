@@ -160,16 +160,154 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage skill skill" "bio skill skill" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
+  .about-info * {
+    box-sizing: border-box; }
+  .about-info .containerskills {
+    grid-area: skill;
+    width: 100%;
+    /* Full width */
+    text-align: left;
+    /* Right-align text */
+    background-color: #444;
+    /* Grey background */ }
+    .about-info .containerskills p {
+      font-size: 12px; }
+    .about-info .containerskills .skills {
+      padding: 0px;
+      /* Add some padding */
+      color: white;
+      /* White text color */
+      width: 100; }
+      .about-info .containerskills .skills.HTML {
+        font-size: 15px;
+        animation: HTML 2s ease-out;
+        margin-bottom: 30px;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 90%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.CSS {
+        font-size: 15px;
+        animation: HTML 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 90%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.Javascript {
+        font-size: 15px;
+        animation: JS 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.WordPress {
+        font-size: 15px;
+        animation: HTML 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 90%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.Node {
+        font-size: 15px;
+        animation: React 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 70%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.PHP {
+        font-size: 15px;
+        animation: React 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 70%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.React {
+        font-size: 15px;
+        animation: React 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 70%;
+        background-color: #eece1a; }
+
+@keyframes HTML {
+  0% {
+    width: 0px; }
+  100% {
+    width: 90%; } }
+
+@keyframes JS {
+  0% {
+    width: 0px; }
+  100% {
+    width: 80%; } }
+
+@keyframes React {
+  0% {
+    width: 0px; }
+  100% {
+    width: 70%; } }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
   .about-info .bio {
+    margin-top: -2px;
+    text-align: center;
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
+  .about-info .experience {
+    text-align: Center;
+    grid-area: experience; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -271,7 +409,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "skill" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
