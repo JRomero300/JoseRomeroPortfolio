@@ -67,7 +67,7 @@ $secondary-color: #eece1a;
     background: rgba(darken($primary-color, 5), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    @include easeout();
+    @include easeOut();
 
     &.show {
       //slide in from right

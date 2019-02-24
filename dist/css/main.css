@@ -42,7 +42,7 @@
     background: rgba(55, 55, 55, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 1.5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
@@ -116,16 +116,19 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
-  h3.lg-heading {
+  h3.lg-heading,
+  h4.lg-heading {
     font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
-  h3.sm-heading {
+  h3.sm-heading,
+  h4.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
@@ -160,10 +163,12 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage skill skill" "bio skill skill" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "skill skill skill" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info * {
     box-sizing: border-box; }
+  .about-info p {
+    font-size: 20px; }
   .about-info .containerskills {
     grid-area: skill;
     width: 100%;
@@ -208,6 +213,20 @@ main {
         width: 90%;
         background-color: #eece1a; }
       .about-info .containerskills .skills.Javascript {
+        font-size: 15px;
+        animation: JS 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a; }
+      .about-info .containerskills .skills.SEO {
         font-size: 15px;
         animation: JS 2s ease-out;
         margin-bottom: 30px;
@@ -302,7 +321,7 @@ main {
     border: #eece1a 3px solid; }
   .about-info .bio {
     margin-top: -2px;
-    text-align: center;
+    text-align: Left;
     grid-area: bio;
     font-size: 1rem; }
   .about-info .experience {
@@ -364,6 +383,7 @@ main {
   color: #fff; }
 
 .btn-light {
+  border-radius: 12px;
   background: #c4c4c4;
   color: #333; }
 
@@ -376,11 +396,11 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {

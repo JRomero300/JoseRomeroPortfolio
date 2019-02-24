@@ -18,7 +18,8 @@ body {
 // Headings
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-weight: 400;
 
@@ -78,14 +79,18 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage skill skill"
-    "bio skill skill"
+    "bioimage bio bio"
+    "skill skill skill"
     "experience experience experience"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
   * {
     box-sizing: border-box;
+  }
+
+  p {
+    font-size: 20px;
   }
 
   .containerskills {
@@ -100,6 +105,7 @@ main {
       padding: 0px; /* Add some padding */
       color: white; /* White text color */
       width: 100;
+
       &.HTML {
         font-size: 15px;
         animation: HTML 2s ease-out;
@@ -147,6 +153,23 @@ main {
         width: 80%;
         background-color: #eece1a;
       }
+
+      &.SEO {
+        font-size: 15px;
+        animation: JS 2s ease-out;
+        margin-bottom: 30px;
+        background: #000;
+        height: 5px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a;
+      }
+
       &.WordPress {
         font-size: 15px;
         animation: HTML 2s ease-out;
@@ -248,10 +271,11 @@ main {
 
   .bio {
     margin-top: -2px;
-    text-align: center;
+    text-align: Left;
     grid-area: bio;
     font-size: 1rem;
   }
+
   .experience {
     text-align: Center;
     grid-area: experience;
@@ -340,6 +364,7 @@ main {
 
 .btn-light {
   @extend .btn;
+  border-radius: 12px;
   background: lighten($primary-color, 50);
   color: #333;
 }
