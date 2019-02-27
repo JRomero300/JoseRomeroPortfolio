@@ -25,6 +25,11 @@ h4 {
 
   &.lg-heading {
     font-size: 6rem;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
   }
 
   &.sm-heading {
@@ -75,191 +80,42 @@ main {
   }
 }
 
+//about---------------------------------------------------
 .about-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
+    "icons1 icons2 icons3"
     "skill skill skill"
     "experience experience experience"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
-  * {
-    box-sizing: border-box;
-  }
-
   p {
     font-size: 20px;
   }
 
-  .containerskills {
-    p {
-      font-size: 12px;
-    }
-    grid-area: skill;
-    width: 100%; /* Full width */
-    text-align: left; /* Right-align text */
-    background-color: $primary-color; /* Grey background */
-    .skills {
-      padding: 0px; /* Add some padding */
-      color: white; /* White text color */
-      width: 100;
+  .iconimage {
+    background: lighten($primary-color, 10);
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
 
-      &.HTML {
-        font-size: 15px;
-        animation: HTML 2s ease-out;
-        margin-bottom: 30px;
+  .icon1 {
+    text-align: center;
+    grid-area: icons1;
+  }
 
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 90%;
-        background-color: #eece1a;
-      }
+  .icon2 {
+    text-align: center;
+    grid-area: icons2;
+  }
 
-      &.CSS {
-        font-size: 15px;
-        animation: HTML 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 90%;
-        background-color: #eece1a;
-      }
-
-      &.Javascript {
-        font-size: 15px;
-        animation: JS 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 80%;
-        background-color: #eece1a;
-      }
-
-      &.SEO {
-        font-size: 15px;
-        animation: JS 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 80%;
-        background-color: #eece1a;
-      }
-
-      &.WordPress {
-        font-size: 15px;
-        animation: HTML 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 90%;
-        background-color: #eece1a;
-      }
-
-      &.Node {
-        font-size: 15px;
-        animation: React 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 70%;
-        background-color: #eece1a;
-      }
-
-      &.PHP {
-        font-size: 15px;
-        animation: React 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 70%;
-        background-color: #eece1a;
-      }
-
-      &.React {
-        font-size: 15px;
-        animation: React 2s ease-out;
-        margin-bottom: 30px;
-        background: #000;
-        height: 5px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #333;
-        border-bottom: 1px solid #333;
-        text-align: right;
-        width: 70%;
-        background-color: #eece1a;
-      }
-      @keyframes HTML {
-        0% {
-          width: 0px;
-        }
-        100% {
-          width: 90%;
-        }
-      }
-
-      @keyframes JS {
-        0% {
-          width: 0px;
-        }
-        100% {
-          width: 80%;
-        }
-      }
-
-      @keyframes React {
-        0% {
-          width: 0px;
-        }
-        100% {
-          width: 70%;
-        }
-      }
-    }
+  .icon3 {
+    text-align: center;
+    grid-area: icons3;
   }
 
   .bio-image {
@@ -271,6 +127,7 @@ main {
 
   .bio {
     margin-top: -2px;
+    margin-left: -30px;
     text-align: Left;
     grid-area: bio;
     font-size: 1rem;
@@ -298,9 +155,299 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+
+  .containerskills {
+    p {
+      font-size: 12px;
+    }
+    grid-area: skill;
+    .skills {
+      .baseskillbar {
+        height: 22px;
+        text-align: right;
+        border: 0.01px solid black;
+        width: 100%;
+        background: lighten($primary-color, 10);
+        border-top-left-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
+        border-radius: 8px;
+        border-color: black;
+      }
+
+      &.HTML {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: HTML 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 90%;
+        background-color: #eece1a;
+      }
+
+      &.CSS {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+        float: up;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: HTML 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 90%;
+        background-color: #eece1a;
+      }
+
+      &.Javascript {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+        float: up;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: JS 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a;
+      }
+
+      &.SEO {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: JS 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a;
+      }
+
+      &.WordPress {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+        float: up;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: HTML 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 90%;
+        background-color: #eece1a;
+      }
+
+      &.Node {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: JS 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a;
+      }
+
+      &.PHP {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+        float: up;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: JS 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a;
+      }
+
+      &.React {
+        margin-top: -25px;
+        .skillslabel {
+          padding-top: 0px;
+          color: white;
+          background: lighten($primary-color, 5);
+          border-top-left-radius: 0.3em;
+          border-bottom-left-radius: 0.3em;
+          border-left: 0.5px solid #111;
+          border-top: 0.5px solid #111;
+          border-bottom: 0.5px solid #111;
+          width: 100px;
+          height: 22px;
+          text-align: Center;
+        }
+        float: up;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        animation: JS 2s ease-out;
+        height: 23px;
+        border-radius: 8px;
+        border-left: 1px solid #111;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: right;
+        width: 80%;
+        background-color: #eece1a;
+      }
+      @keyframes HTML {
+        0% {
+          width: 0px;
+        }
+        100% {
+          width: 90%;
+        }
+      }
+
+      @keyframes JS {
+        0% {
+          width: 0px;
+        }
+        100% {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 
-// Work/Projects
+// Work/Projects--------------------------------------------------
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -318,7 +465,7 @@ main {
   }
 }
 
-// Contact Page
+// Contact Page-----------------------------------------------------------
 .boxes {
   display: flex;
   flex-wrap: wrap;

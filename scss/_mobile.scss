@@ -53,9 +53,19 @@
   }
 
   .about-info {
+    .containerskills {
+      margin-top: 0px;
+    }
+    .bio {
+      text-align: center;
+    }
+
     grid-template-areas:
       "bioimage"
       "bio"
+      "icons1"
+      "icons2"
+      "icons3"
       "skill"
       "experience"
       "job1"
