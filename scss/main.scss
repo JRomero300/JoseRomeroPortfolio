@@ -157,9 +157,6 @@ main {
   }
 
   .containerskills {
-    p {
-      font-size: 12px;
-    }
     grid-area: skill;
     .skills {
       .baseskillbar {
@@ -177,7 +174,10 @@ main {
       &.HTML {
         margin-top: -25px;
         .skillslabel {
-          padding-top: 0px;
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           color: white;
           background: lighten($primary-color, 5);
           border-top-left-radius: 0.3em;
@@ -185,7 +185,7 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
@@ -208,6 +208,10 @@ main {
       &.CSS {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -216,13 +220,11 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
-        float: up;
 
-        font-size: 16px;
         font-weight: 700;
         color: #000;
         animation: HTML 2s ease-out;
@@ -240,6 +242,10 @@ main {
       &.Javascript {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -248,13 +254,11 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
-        float: up;
 
-        font-size: 16px;
         font-weight: 700;
         color: #000;
         animation: JS 2s ease-out;
@@ -272,6 +276,10 @@ main {
       &.SEO {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -280,12 +288,11 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
 
-        font-size: 16px;
         font-weight: 700;
         color: #000;
         animation: JS 2s ease-out;
@@ -303,6 +310,10 @@ main {
       &.WordPress {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -311,13 +322,11 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
-        float: up;
 
-        font-size: 16px;
         font-weight: 700;
         color: #000;
         animation: HTML 2s ease-out;
@@ -335,6 +344,10 @@ main {
       &.Node {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -343,7 +356,7 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
@@ -366,6 +379,10 @@ main {
       &.PHP {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -374,7 +391,7 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
@@ -398,6 +415,10 @@ main {
       &.React {
         margin-top: -25px;
         .skillslabel {
+          p {
+            position: relative;
+            bottom: 25px;
+          }
           padding-top: 0px;
           color: white;
           background: lighten($primary-color, 5);
@@ -406,13 +427,12 @@ main {
           border-left: 0.5px solid #111;
           border-top: 0.5px solid #111;
           border-bottom: 0.5px solid #111;
-          width: 100px;
+          width: 110px;
           height: 22px;
           text-align: Center;
         }
-        float: up;
 
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 700;
         color: #000;
         animation: JS 2s ease-out;
@@ -451,15 +471,14 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   .container {
     position: relative;
-    margin-top: 50px;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    display: inline-block;
+    border-color: $secondary-color;
   }
-
   .overlay {
     position: absolute;
     top: 0;
@@ -470,46 +489,32 @@ main {
     transition: background 0.5s ease;
   }
 
-  .container:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, 0.3);
-  }
-
-  img {
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 0;
-  }
-
   .title {
+    font-size: 2em;
+    visibility: hidden;
     position: absolute;
-    width: 500px;
-    left: 0;
-    top: 120px;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
+    font-weight: 900;
     text-transform: uppercase;
-    color: white;
+    position: absolute;
     z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
     transition: top 0.5s ease;
-  }
-
-  .container:hover .title {
-    top: 90px;
   }
 
   .button {
     position: absolute;
-    width: 500px;
-    left: 0;
-    top: 180px;
+    width: 200px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
     transition: opacity 0.35s ease;
   }
-
   .button a {
     width: 200px;
     padding: 12px 48px;
@@ -517,6 +522,25 @@ main {
     color: white;
     border: solid 2px white;
     z-index: 1;
+  }
+
+  img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    border: 3px $secondary-color solid;
+  }
+
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.562);
+    visibility: visible;
+    border-color: $secondary-color;
+  }
+
+  .container:hover .title {
+    visibility: visible;
+    bottom: 10px;
   }
 
   .container:hover .button {

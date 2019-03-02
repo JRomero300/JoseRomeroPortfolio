@@ -283,8 +283,6 @@ main {
     border-bottom: #eece1a 5px solid; }
   .about-info .containerskills {
     grid-area: skill; }
-    .about-info .containerskills p {
-      font-size: 12px; }
     .about-info .containerskills .skills .baseskillbar {
       height: 22px;
       text-align: right;
@@ -311,7 +309,6 @@ main {
       width: 90%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.HTML .skillslabel {
-        padding-top: 0px;
         color: white;
         background: #515151;
         border-top-left-radius: 0.3em;
@@ -319,13 +316,14 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.HTML .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.CSS {
       margin-top: -25px;
-      float: up;
-      font-size: 16px;
       font-weight: 700;
       color: #000;
       animation: HTML 2s ease-out;
@@ -347,13 +345,14 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.CSS .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.Javascript {
       margin-top: -25px;
-      float: up;
-      font-size: 16px;
       font-weight: 700;
       color: #000;
       animation: JS 2s ease-out;
@@ -375,12 +374,14 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.Javascript .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.SEO {
       margin-top: -25px;
-      font-size: 16px;
       font-weight: 700;
       color: #000;
       animation: JS 2s ease-out;
@@ -402,13 +403,14 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.SEO .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.WordPress {
       margin-top: -25px;
-      float: up;
-      font-size: 16px;
       font-weight: 700;
       color: #000;
       animation: HTML 2s ease-out;
@@ -430,9 +432,12 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.WordPress .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.Node {
       margin-top: -25px;
       font-size: 16px;
@@ -457,9 +462,12 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.Node .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.PHP {
       margin-top: -25px;
       float: up;
@@ -485,13 +493,15 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.PHP .skillslabel p {
+          position: relative;
+          bottom: 25px; }
     .about-info .containerskills .skills.React {
       margin-top: -25px;
-      float: up;
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 700;
       color: #000;
       animation: JS 2s ease-out;
@@ -513,9 +523,12 @@ main {
         border-left: 0.5px solid #111;
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
-        width: 100px;
+        width: 110px;
         height: 22px;
         text-align: Center; }
+        .about-info .containerskills .skills.React .skillslabel p {
+          position: relative;
+          bottom: 25px; }
 
 @keyframes HTML {
   0% {
@@ -532,12 +545,12 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .projects .container {
     position: relative;
-    margin-top: 50px;
-    width: 500px;
-    height: 300px; }
+    width: 100%;
+    display: inline-block;
+    border-color: #eece1a; }
   .projects .overlay {
     position: absolute;
     top: 0;
@@ -546,33 +559,26 @@ main {
     height: 100%;
     background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease; }
-  .projects .container:hover .overlay {
-    display: block;
-    background: rgba(0, 0, 0, 0.3); }
-  .projects img {
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 0; }
   .projects .title {
+    font-size: 2em;
+    visibility: hidden;
     position: absolute;
-    width: 500px;
-    left: 0;
-    top: 120px;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
+    font-weight: 900;
     text-transform: uppercase;
-    color: white;
+    position: absolute;
     z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
     transition: top 0.5s ease; }
-  .projects .container:hover .title {
-    top: 90px; }
   .projects .button {
     position: absolute;
-    width: 500px;
-    left: 0;
-    top: 180px;
+    width: 200px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
     transition: opacity 0.35s ease; }
@@ -583,6 +589,19 @@ main {
     color: white;
     border: solid 2px white;
     z-index: 1; }
+  .projects img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    border: 3px #eece1a solid; }
+  .projects .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.562);
+    visibility: visible;
+    border-color: #eece1a; }
+  .projects .container:hover .title {
+    visibility: visible;
+    bottom: 10px; }
   .projects .container:hover .button {
     opacity: 1; }
 
@@ -636,7 +655,10 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .title {
+      top: 50%;
+      font-size: 2em; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -672,7 +694,11 @@ main {
     .about-info .bio {
       text-align: center; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+    .projects .title {
+      font-size: 4em;
+      top: 30%;
+      left: 50%; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -687,4 +713,8 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .projects .title {
+      top: 50%;
+      left: 50%;
+      font-size: 4em; } }
