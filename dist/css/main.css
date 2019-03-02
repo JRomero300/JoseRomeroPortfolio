@@ -72,13 +72,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 1.5s ease-out; }
+  transition: all 0.4s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 1.5s ease-out; }
+    transition: all 0.4s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -110,13 +110,13 @@
     background: rgba(55, 55, 55, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: rgba(68, 68, 68, 0.9);
     transform: translate3d(0, 100%, 0);
-    transition: all 1.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -128,7 +128,7 @@
       border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 1.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0px, 0px, 0px); }
     .menu .nav-item.current > a {
@@ -142,7 +142,7 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 1.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu .nav-link:hover {
       color: #eece1a; }
 
@@ -229,7 +229,7 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
       main .icons a:hover {
         color: #eece1a; }
   main#home {
@@ -265,7 +265,6 @@ main {
     border: #eece1a 3px solid; }
   .about-info .bio {
     margin-top: -2px;
-    margin-left: -30px;
     text-align: Left;
     grid-area: bio;
     font-size: 1rem; }
@@ -534,13 +533,58 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr); }
-  .projects img {
+  .projects .container {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px; }
+  .projects .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #eece1a;
-      transition: all 0.5s ease-out; }
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease; }
+  .projects .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.3); }
+  .projects img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0; }
+  .projects .title {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: top 0.5s ease; }
+  .projects .container:hover .title {
+    top: 90px; }
+  .projects .button {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease; }
+  .projects .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1; }
+  .projects .container:hover .button {
+    opacity: 1; }
 
 .boxes {
   display: flex;
@@ -553,7 +597,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #eece1a;

@@ -3,24 +3,20 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 
-@mixin easeout {
-  transition: all 1.5s ease-out;
-}
-
 .menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
-  @include easeout;
+  @include easeOut;
 
   .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
-    @include easeout;
+    @include easeOut;
   }
   //Rotate into x with Menu Lines
   &.close {
@@ -78,7 +74,7 @@ $secondary-color: #eece1a;
   &-branding {
     background: rgba($primary-color, 0.9);
     transform: translate3d(0, 100%, 0);
-    @include easeout;
+    @include easeOut;
 
     &.show {
       // Slide in from bottom
@@ -96,7 +92,7 @@ $secondary-color: #eece1a;
   //end of branding
   .nav-item {
     transform: translate3d(600px, 0, 0);
-    @include easeout;
+    @include easeOut;
 
     &.show {
       // Slide in from right
@@ -118,7 +114,7 @@ $secondary-color: #eece1a;
     font-weight: 300;
     color: set-text-color($primary-color);
     text-decoration: none;
-    @include easeout;
+    @include easeOut;
 
     &:hover {
       color: $secondary-color;
