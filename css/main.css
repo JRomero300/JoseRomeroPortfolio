@@ -651,13 +651,16 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+    .projects .title {
+      top: 40%;
+      font-size: 2em; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
     .projects .title {
-      top: 50%;
+      top: 30%;
       font-size: 2em; } }
 
 @media screen and (max-width: 768px) {
@@ -696,8 +699,8 @@ main {
   .projects {
     grid-template-columns: repeat(1, 1fr); }
     .projects .title {
-      font-size: 4em;
-      top: 30%;
+      font-size: 2em;
+      top: 40%;
       left: 50%; } }
 
 @media screen and (max-width: 500px) {
@@ -715,6 +718,6 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .title {
-      top: 50%;
+      top: 40%;
       left: 50%;
-      font-size: 4em; } }
+      font-size: 2em; } }
