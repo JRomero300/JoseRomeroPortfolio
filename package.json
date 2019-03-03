@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://JRomero300.github.io/joseromeroportfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "node-sass -w scss/ -o css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "author": "Jose Romero",
