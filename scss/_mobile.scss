@@ -8,6 +8,10 @@
   }
 
   .projects {
+    .title {
+      top: 40%;
+      font-size: 2em;
+    }
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -23,10 +27,10 @@
 
   .projects {
     .title {
-      top: 50%;
+      top: 30%;
       font-size: 2em;
     }
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -98,8 +102,8 @@
 
   .projects {
     .title {
-      font-size: 4em;
-      top: 30%;
+      font-size: 2em;
+      top: 40%;
       left: 50%;
     }
     grid-template-columns: repeat(1, 1fr);
@@ -134,9 +138,9 @@
 
   .projects {
     .title {
-      top: 50%;
+      top: 40%;
       left: 50%;
-      font-size: 4em;
+      font-size: 2em;
     }
     grid-template-columns: 1fr;
   }
