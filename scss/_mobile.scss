@@ -1,5 +1,12 @@
 // Widescreens
 @include mediaXl {
+  .menu {
+    display: none;
+    &-btn {
+      display: none;
+    }
+  }
+
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -7,6 +14,13 @@
 
 // Desktops & Laptops
 @include mediaLg {
+  .menu {
+    display: none;
+    &-btn {
+      display: none;
+    }
+  }
+
   .projects {
     .title {
       top: 50%;
@@ -18,6 +32,9 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  .nav {
+    display: none;
+  }
   main {
     align-items: center;
     text-align: center;
@@ -91,6 +108,10 @@
 
 // Smartphones
 @include mediaSm {
+  .nav {
+    display: none;
+  }
+
   main {
     padding: 2rem;
     #home h1 {
