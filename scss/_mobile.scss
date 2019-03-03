@@ -1,6 +1,10 @@
 // Widescreens
 @include mediaXl {
   .projects {
+    .title {
+      top: 50%;
+      font-size: 2em;
+    }
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -10,9 +14,9 @@
   .projects {
     .title {
       top: 50%;
-      font-size: 2em;
+      font-size: 4em;
     }
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
