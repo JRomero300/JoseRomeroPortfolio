@@ -604,7 +604,7 @@ main {
     text-transform: uppercase;
     position: absolute;
     z-index: 1;
-    top: 30%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -630,6 +630,7 @@ main {
     object-fit: cover;
     display: block;
     width: 100%;
+    height: 200px;
     border: 3px #eece1a solid; }
   .projects .container:hover .overlay {
     display: block;
@@ -694,7 +695,7 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
     .projects .title {
-      top: 40%;
+      top: 20%;
       font-size: 2em; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -706,7 +707,7 @@ main {
     grid-template-columns: repeat(3, 1fr); }
     .projects .title {
       top: 30%;
-      font-size: 2em; } }
+      font-size: 25px; } }
 
 @media screen and (max-width: 768px) {
   .nav {
@@ -745,9 +746,11 @@ main {
       text-align: center; }
   .projects {
     grid-template-columns: repeat(1, 1fr); }
+    .projects img {
+      height: 300px; }
     .projects .title {
       font-size: 2em;
-      top: 40%;
+      top: 30%;
       left: 50%; } }
 
 @media screen and (max-width: 500px) {

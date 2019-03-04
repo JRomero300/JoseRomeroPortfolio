@@ -9,7 +9,7 @@
 
   .projects {
     .title {
-      top: 40%;
+      top: 20%;
       font-size: 2em;
     }
     grid-template-columns: repeat(4, 1fr);
@@ -28,7 +28,7 @@
   .projects {
     .title {
       top: 30%;
-      font-size: 2em;
+      font-size: 25px;
     }
     grid-template-columns: repeat(3, 1fr);
   }
@@ -101,9 +101,12 @@
   }
 
   .projects {
+    img {
+      height: 300px;
+    }
     .title {
       font-size: 2em;
-      top: 40%;
+      top: 30%;
       left: 50%;
     }
     grid-template-columns: repeat(1, 1fr);
