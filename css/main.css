@@ -335,7 +335,7 @@ main {
       .about-info .containerskills .skills .baseskillbar p {
         position: relative;
         bottom: 4px;
-        right: 10px; }
+        right: 5px; }
     .about-info .containerskills .skills.HTML {
       margin-top: -50px;
       font-size: 16px;
@@ -767,19 +767,24 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "icons1" "icons2" "icons3" "skill" "experience" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
-    .about-info .containerskills {
-      margin-top: 0px; }
-    .about-info .bio {
-      text-align: center; }
-  .projects {
     grid-template-columns: repeat(1, 1fr); }
-    .projects img {
-      height: 300px; }
-    .projects .title {
-      font-size: 2em;
-      top: 30%;
-      left: 50%; } }
+    .about-info .containerskills .skills {
+      position: relative;
+      bottom: -10px; }
+    .about-info .containerskills .baseskillbar > p {
+      font-size: 16px;
+      right: 100px; }
+    .about-info .bio {
+      text-align: center; } }
+
+.projects {
+  grid-template-columns: repeat(1, 1fr); }
+  .projects img {
+    height: 300px; }
+  .projects .title {
+    font-size: 2em;
+    top: 30%;
+    left: 50%; }
 
 @media screen and (max-width: 500px) {
   .nav {
@@ -795,6 +800,19 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "icons1" "icons2" "icons3" "skill" "experience" "job1" "job2" "job3";
+    grid-template-columns: repeat(1, 1fr); }
+    .about-info .bio {
+      text-align: center; }
+    .about-info .containerskills .skills {
+      position: relative;
+      bottom: -19px; }
+    .about-info .containerskills .baseskillbar > p {
+      font-size: 12px;
+      position: relative;
+      top: 2px;
+      right: 1px; }
   .projects {
     grid-template-columns: 1fr; }
     .projects .title {

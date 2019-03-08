@@ -1,4 +1,4 @@
-// Widescreens
+// Widescreens ---------------------------------------------------
 @include mediaXl {
   .about-info {
     .bio > p {
@@ -14,6 +14,7 @@
       margin-left: 100px;
       margin-right: 100px;
     }
+
     .experience > h2 {
       font-size: 2em;
     }
@@ -30,8 +31,7 @@
   }
 
   .projects {
-
-    img{
+    img {
       height: 400px;
     }
     .title {
@@ -57,7 +57,7 @@
 
   .projects {
     img {
-      height:100%;
+      height: 100%;
     }
     .title {
       top: 20%;
@@ -67,7 +67,7 @@
   }
 }
 
-// Tablets & Small Laptops
+// Tablets & Small Laptops -----------------------------------------
 @include mediaMd {
   .nav {
     display: none;
@@ -112,12 +112,19 @@
 
   .about-info {
     .containerskills {
-      margin-top: 0px;
+      .skills {
+        position: relative;
+        bottom: -10px;
+      }
+
+      .baseskillbar > p {
+        font-size: 16px;
+        right: 100px;
+      }
     }
     .bio {
       text-align: center;
     }
-
     grid-template-areas:
       "bioimage"
       "bio"
@@ -130,23 +137,23 @@
       "job2"
       "job3";
 
-    grid-template-columns: 1fr;
-  }
-
-  .projects {
-    img {
-      height: 300px;
-    }
-    .title {
-      font-size: 2em;
-      top: 30%;
-      left: 50%;
-    }
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-// Smartphones
+.projects {
+  img {
+    height: 300px;
+  }
+  .title {
+    font-size: 2em;
+    top: 30%;
+    left: 50%;
+  }
+  grid-template-columns: repeat(1, 1fr);
+}
+
+// Smartphones--------------------------------------------------------------------------------------------------
 @include mediaSm {
   .nav {
     display: none;
@@ -172,6 +179,38 @@
     }
   }
 
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "icons1"
+      "icons2"
+      "icons3"
+      "skill"
+      "experience"
+      "job1"
+      "job2"
+      "job3";
+
+    .bio {
+      text-align: center;
+    }
+    grid-template-columns: repeat(1, 1fr);
+
+    .containerskills {
+      .skills {
+        position: relative;
+        bottom: -19px;
+      }
+
+      .baseskillbar > p {
+        font-size: 12px;
+        position: relative;
+        top: 2px;
+        right: 1px;
+      }
+    }
+  }
   .projects {
     .title {
       top: 40%;
