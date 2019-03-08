@@ -10,8 +10,18 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src = "js/Jquery3.3.1.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function(){
+              $('.html').animate({width:'90%'},2000);
+              $('.wordpress').animate({width:'90%'},2000);
+              $('.css').animate({width:'75%'},2000);
+              $('.js').animate({width:'50%'},2000);
+              $('.php').animate({width:'70%'},2000);
+              $('.ajax').animate({width:'45%'},2000);
+            });
+    </script>
     <title>About Me</title>
   </head>
 
@@ -116,66 +126,40 @@
           <p>My layouts will work on any device, big or small</p>
         </div>
 
-        <div class="containerskills">
-          <div class="skills" id="skills">
-            <div class="baseskillbar">
-              <p>90%</p>
-              <div class="skills HTML" data-percent="95%">
-                <div class="skillslabel"><p>HTML</p></div>
-              </div>
+      
+          <div class="skillscontainer">
+            <div class="progressBar">
+              <div class="title htmlColor">HTML5</div>
+              <div class="progress html"></div>
+              <div class="progress_value">90%</div>
             </div>
-            <br />
-            <div class="baseskillbar">
-              <p>90%</p>
-              <div class="skills CSS" data-percent="95%">
-                <div class="skillslabel"><p>CSS</p></div>
-              </div>
+            <div class="progressBar">
+              <div class="title cssColor">CSS3</div>
+              <div class="progress css"></div>
+              <div class="progress_value">75%</div>
             </div>
-            <br />
-            <div class="baseskillbar">
-              <p>90%</p>
-              <div class="skills WordPress" data-percent="95%">
-                <div class="skillslabel"><p>WordPress</p></div>
+            <div class="progressBar">
+                <div class="title WordPressColor">WordPress</div>
+                <div class="progress wordpress"></div>
+                <div class="progress_value">90%</div>
               </div>
+            <div class="progressBar">
+              <div class="title jsColor">JavaScript</div>
+              <div class="progress js"></div>
+              <div class="progress_value">50%</div>
             </div>
-            <br />
-            <div class="baseskillbar">
-              <p>80%</p>
-              <div class="skills Javascript" data-percent="95%">
-                <div class="skillslabel"><p>JavaScript</p></div>
-              </div>
+            <div class="progressBar">
+              <div class="title phpColor">PHP</div>
+              <div class="progress php"></div>
+              <div class="progress_value">70%</div>
             </div>
-            <br />
-            <div class="baseskillbar">
-              <p>80%</p>
-              <div class="skills React" data-percent="95%">
-                <div class="skillslabel"><p>React</p></div>
-              </div>
+            <div class="progressBar">
+              <div class="title ajaxColor">Ajax</div>
+              <div class="progress ajax"></div>
+              <div class="progress_value">45%</div>
             </div>
-            <br />
-            <div class="baseskillbar">
-              <p>80%</p>
-              <div class="skills PHP" data-percent="95%">
-                <div class="skillslabel"><p>PHP</p></div>
-              </div>
-            </div>
-            <br />
-            <div class="baseskillbar">
-              <p>80%</p>
-              <div class="skills Node" data-percent="95%">
-                <div class="skillslabel"><p>Node.Js</p></div>
-              </div>
-            </div>
-            <br />
-            <div class="baseskillbar">
-              <p>80%</p>
-              <div class="skills SEO" data-percent="95%">
-                <div class="skillslabel"><p>SQL</p></div>
-              </div>
-            </div>
-          </div>
         </div>
-
+      
         <div class="experience">
           <h2 class="text-secondary">Experience</h2>
         </div>
@@ -264,5 +248,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    </script>
   </body>
 </html>

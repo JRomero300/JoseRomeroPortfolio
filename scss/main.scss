@@ -156,327 +156,86 @@ main {
     border-bottom: $secondary-color 5px solid;
   }
 
-  .containerskills {
+  .skillscontainer {
     grid-area: skill;
-    .skills {
-      .baseskillbar {
-        p {
-          position: relative;
-          bottom: 4px;
-          right: 5px;
-        }
-        margin-top: -20px;
-        height: 22px;
-        text-align: right;
-        border: 0.01px solid black;
-        width: 100%;
-        background: lighten($primary-color, 10);
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-radius: 8px;
-        border-color: black;
-      }
+    .progressBar {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      background: #eeeeee;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px #222;
+    }
+    .title {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      padding-left: 10px;
+      float: left;
+      font-weight: bold;
+      color: #fff;
+      line-height: 2.5;
+      z-index: 10000;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      box-shadow: 2px 0 2px #333;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .progress_value {
+      position: relative;
+      float: right;
+      padding-right: 10px;
+      line-height: 2.5;
+      font-weight: bold;
+      color: #455a64;
+      z-index: 10000;
+    }
+    .progress {
+      height: 40px;
+      position: absolute;
+      border-radius: 5px;
+      box-shadow: 2px 0 2px #555;
+    }
 
-      &.HTML {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 1px;
-          }
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-        }
-
-        font-size: 16px;
-        font-weight: 700;
-        color: #000;
-        animation: HTML 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-        text-align: center;
-        width: 90%;
-        background-color: #eece1a;
-      }
-
-      &.CSS {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 35px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: left;
-        }
-
-        font-weight: 700;
-        color: #000;
-        animation: HTML 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-        text-align: center;
-        width: 90%;
-        background-color: #eece1a;
-      }
-
-      &.Javascript {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 2px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: center;
-        }
-
-        font-weight: 700;
-        color: #000;
-        animation: JS 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-        text-align: center;
-        width: 80%;
-        background-color: #eece1a;
-      }
-
-      &.SEO {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 33px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: left;
-        }
-
-        font-weight: 700;
-        color: #000;
-        animation: JS 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-
-        width: 80%;
-        background-color: #eece1a;
-      }
-
-      &.WordPress {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 2px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: Center;
-        }
-
-        font-weight: 700;
-        color: #000;
-        animation: HTML 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-
-        width: 90%;
-        background-color: #eece1a;
-      }
-
-      &.Node {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 18px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: left;
-        }
-
-        font-size: 16px;
-        font-weight: 700;
-        color: #000;
-        animation: JS 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-        text-align: right;
-        width: 80%;
-        background-color: #eece1a;
-      }
-
-      &.PHP {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 32px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: left;
-        }
-        float: up;
-        font-size: 16px;
-        font-weight: 700;
-        color: #000;
-        animation: JS 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-        width: 80%;
-        background-color: #eece1a;
-      }
-
-      &.React {
-        margin-top: -50px;
-        .skillslabel {
-          p {
-            position: relative;
-            bottom: 25px;
-            left: 26px;
-          }
-          padding-top: 0px;
-          color: white;
-          background: lighten($primary-color, 5);
-          border-top-left-radius: 0.3em;
-          border-bottom-left-radius: 0.3em;
-          border-left: 0.5px solid #111;
-          border-top: 0.5px solid #111;
-          border-bottom: 0.5px solid #111;
-          width: 110px;
-          height: 22px;
-          text-align: left;
-        }
-
-        font-size: 13px;
-        font-weight: 700;
-        color: #000;
-        animation: JS 2s ease-out;
-        height: 23px;
-        border-radius: 8px;
-        border-left: 1px solid #111;
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
-        border-bottom: 1px solid #111;
-
-        width: 80%;
-        background-color: #eece1a;
-      }
-      @keyframes HTML {
-        0% {
-          width: 0px;
-        }
-        100% {
-          width: 90%;
-        }
-      }
-
-      @keyframes JS {
-        0% {
-          width: 0px;
-        }
-        100% {
-          width: 80%;
-        }
-      }
+    .htmlColor {
+      background: lighten($primary-color, 10);
+    }
+    .cssColor {
+      background: lighten($primary-color, 10);
+    }
+    .WordPressColor {
+      background: lighten($primary-color, 10);
+    }
+    .jsColor {
+      background: lighten($primary-color, 10);
+    }
+    .phpColor {
+      background: lighten($primary-color, 10);
+    }
+    .ajaxColor {
+      background: lighten($primary-color, 10);
+    }
+    .html {
+      background: #ffdf00;
+    }
+    .wordpress {
+      background: #ffdf00;
+    }
+    .css {
+      background: #ffdf00;
+    }
+    .js {
+      background: #ffdf00;
+    }
+    .php {
+      background: #ffdf00;
+    }
+    .ajax {
+      background: #ffdf00;
     }
   }
-}
+} //--------end of about-info
 
 // Work/Projects--------------------------------------------------
 .projects {

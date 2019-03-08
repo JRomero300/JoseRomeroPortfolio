@@ -319,274 +319,67 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
-  .about-info .containerskills {
+  .about-info .skillscontainer {
     grid-area: skill; }
-    .about-info .containerskills .skills .baseskillbar {
-      margin-top: -20px;
-      height: 22px;
-      text-align: right;
-      border: 0.01px solid black;
+    .about-info .skillscontainer .progressBar {
+      position: relative;
       width: 100%;
-      background: #5e5e5e;
-      border-top-left-radius: 0.3em;
-      border-bottom-left-radius: 0.3em;
-      border-radius: 8px;
-      border-color: black; }
-      .about-info .containerskills .skills .baseskillbar p {
-        position: relative;
-        bottom: 4px;
-        right: 5px; }
-    .about-info .containerskills .skills.HTML {
-      margin-top: -50px;
-      font-size: 16px;
-      font-weight: 700;
-      color: #000;
-      animation: HTML 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      text-align: center;
-      width: 90%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.HTML .skillslabel {
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px; }
-        .about-info .containerskills .skills.HTML .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 1px; }
-    .about-info .containerskills .skills.CSS {
-      margin-top: -50px;
-      font-weight: 700;
-      color: #000;
-      animation: HTML 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      text-align: center;
-      width: 90%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.CSS .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: left; }
-        .about-info .containerskills .skills.CSS .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 35px; }
-    .about-info .containerskills .skills.Javascript {
-      margin-top: -50px;
-      font-weight: 700;
-      color: #000;
-      animation: JS 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      text-align: center;
-      width: 80%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.Javascript .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: center; }
-        .about-info .containerskills .skills.Javascript .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 2px; }
-    .about-info .containerskills .skills.SEO {
-      margin-top: -50px;
-      font-weight: 700;
-      color: #000;
-      animation: JS 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      width: 80%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.SEO .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: left; }
-        .about-info .containerskills .skills.SEO .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 33px; }
-    .about-info .containerskills .skills.WordPress {
-      margin-top: -50px;
-      font-weight: 700;
-      color: #000;
-      animation: HTML 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      width: 90%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.WordPress .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: Center; }
-        .about-info .containerskills .skills.WordPress .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 2px; }
-    .about-info .containerskills .skills.Node {
-      margin-top: -50px;
-      font-size: 16px;
-      font-weight: 700;
-      color: #000;
-      animation: JS 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      text-align: right;
-      width: 80%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.Node .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: left; }
-        .about-info .containerskills .skills.Node .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 18px; }
-    .about-info .containerskills .skills.PHP {
-      margin-top: -50px;
-      float: up;
-      font-size: 16px;
-      font-weight: 700;
-      color: #000;
-      animation: JS 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      width: 80%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.PHP .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: left; }
-        .about-info .containerskills .skills.PHP .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 32px; }
-    .about-info .containerskills .skills.React {
-      margin-top: -50px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #000;
-      animation: JS 2s ease-out;
-      height: 23px;
-      border-radius: 8px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #111;
-      border-bottom: 1px solid #111;
-      width: 80%;
-      background-color: #eece1a; }
-      .about-info .containerskills .skills.React .skillslabel {
-        padding-top: 0px;
-        color: white;
-        background: #515151;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        border-left: 0.5px solid #111;
-        border-top: 0.5px solid #111;
-        border-bottom: 0.5px solid #111;
-        width: 110px;
-        height: 22px;
-        text-align: left; }
-        .about-info .containerskills .skills.React .skillslabel p {
-          position: relative;
-          bottom: 25px;
-          left: 26px; }
-
-@keyframes HTML {
-  0% {
-    width: 0px; }
-  100% {
-    width: 90%; } }
-
-@keyframes JS {
-  0% {
-    width: 0px; }
-  100% {
-    width: 80%; } }
+      height: 40px;
+      background: #eeeeee;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px #222; }
+    .about-info .skillscontainer .title {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      padding-left: 10px;
+      float: left;
+      font-weight: bold;
+      color: #fff;
+      line-height: 2.5;
+      z-index: 10000;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      box-shadow: 2px 0 2px #333;
+      text-shadow: 1px 1px 1px #000; }
+    .about-info .skillscontainer .progress_value {
+      position: relative;
+      float: right;
+      padding-right: 10px;
+      line-height: 2.5;
+      font-weight: bold;
+      color: #455a64;
+      z-index: 10000; }
+    .about-info .skillscontainer .progress {
+      height: 40px;
+      position: absolute;
+      border-radius: 5px;
+      box-shadow: 2px 0 2px #555; }
+    .about-info .skillscontainer .htmlColor {
+      background: #5e5e5e; }
+    .about-info .skillscontainer .cssColor {
+      background: #5e5e5e; }
+    .about-info .skillscontainer .WordPressColor {
+      background: #5e5e5e; }
+    .about-info .skillscontainer .jsColor {
+      background: #5e5e5e; }
+    .about-info .skillscontainer .phpColor {
+      background: #5e5e5e; }
+    .about-info .skillscontainer .ajaxColor {
+      background: #5e5e5e; }
+    .about-info .skillscontainer .html {
+      background: #ffdf00; }
+    .about-info .skillscontainer .wordpress {
+      background: #ffdf00; }
+    .about-info .skillscontainer .css {
+      background: #ffdf00; }
+    .about-info .skillscontainer .js {
+      background: #ffdf00; }
+    .about-info .skillscontainer .php {
+      background: #ffdf00; }
+    .about-info .skillscontainer .ajax {
+      background: #ffdf00; }
 
 .projects {
   display: grid;
@@ -703,7 +496,7 @@ main {
   .about-info .icon2,
   .about-info .icon3 {
     font-size: 2em; }
-  .about-info .containerskills {
+  .about-info .skillscontainer {
     margin-left: 100px;
     margin-right: 100px; }
   .about-info .experience > h2 {
@@ -768,12 +561,6 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "icons1" "icons2" "icons3" "skill" "experience" "job1" "job2" "job3";
     grid-template-columns: repeat(1, 1fr); }
-    .about-info .containerskills .skills {
-      position: relative;
-      bottom: -10px; }
-    .about-info .containerskills .baseskillbar > p {
-      font-size: 16px;
-      right: 100px; }
     .about-info .bio {
       text-align: center; }
   .projects {
@@ -802,10 +589,6 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "icons1" "icons2" "icons3" "skill" "experience" "job1" "job2" "job3";
     grid-template-columns: repeat(1, 1fr); }
-    .about-info .containerskills .skills > .baseskillbar > p {
-      bottom: 1px;
-      left: 1px;
-      z-index: 1; }
     .about-info .bio {
       text-align: center; }
   .projects {

@@ -10,7 +10,7 @@
       font-size: 2em;
     }
 
-    .containerskills {
+    .skillscontainer {
       margin-left: 100px;
       margin-right: 100px;
     }
@@ -111,17 +111,6 @@
   }
 
   .about-info {
-    .containerskills {
-      .skills {
-        position: relative;
-        bottom: -10px;
-      }
-
-      .baseskillbar > p {
-        font-size: 16px;
-        right: 100px;
-      }
-    }
     .bio {
       text-align: center;
     }
@@ -180,12 +169,6 @@
   }
 
   .about-info {
-    .containerskills .skills > .baseskillbar > p {
-      bottom: 1px;
-      left: 1px;
-      z-index: 1;
-    }
-
     grid-template-areas:
       "bioimage"
       "bio"
