@@ -30,8 +30,12 @@
   }
 
   .projects {
+
+    img{
+      height: 400px;
+    }
     .title {
-      top: 20%;
+      top: 50%;
       font-size: 2em;
     }
     grid-template-columns: repeat(4, 1fr);
@@ -52,11 +56,14 @@
   }
 
   .projects {
+    img {
+      height:100%;
+    }
     .title {
-      top: 30%;
+      top: 20%;
       font-size: 25px;
     }
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

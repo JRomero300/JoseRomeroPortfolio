@@ -716,8 +716,10 @@ main {
       display: none; }
   .projects {
     grid-template-columns: repeat(4, 1fr); }
+    .projects img {
+      height: 400px; }
     .projects .title {
-      top: 20%;
+      top: 50%;
       font-size: 2em; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -728,9 +730,11 @@ main {
     .menu-btn {
       display: none; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects img {
+      height: 100%; }
     .projects .title {
-      top: 30%;
+      top: 20%;
       font-size: 25px; } }
 
 @media screen and (max-width: 768px) {
