@@ -4,7 +4,7 @@ $primary-color: #444;
 $secondary-color: #eece1a;
 
 .nav {
-  height: 50px;
+  height: 65px;
   width: 100%;
   background-color: #4d4d4d;
   position: relative;
@@ -39,6 +39,7 @@ $secondary-color: #eece1a;
 }
 
 .nav > .nav-links > a:hover {
+  height: 65px;
   background-color: rgba(0, 0, 0, 0.3);
   color: $secondary-color;
 }

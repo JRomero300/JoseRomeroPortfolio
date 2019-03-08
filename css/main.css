@@ -67,7 +67,7 @@
     opacity: 1; } }
 
 .nav {
-  height: 50px;
+  height: 65px;
   width: 100%;
   background-color: #4d4d4d;
   position: relative; }
@@ -97,6 +97,7 @@
   color: #efefef; }
 
 .nav > .nav-links > a:hover {
+  height: 65px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #eece1a; }
 
@@ -321,6 +322,7 @@ main {
   .about-info .containerskills {
     grid-area: skill; }
     .about-info .containerskills .skills .baseskillbar {
+      margin-top: -20px;
       height: 22px;
       text-align: right;
       border: 0.01px solid black;
@@ -330,8 +332,12 @@ main {
       border-bottom-left-radius: 0.3em;
       border-radius: 8px;
       border-color: black; }
+      .about-info .containerskills .skills .baseskillbar p {
+        position: relative;
+        bottom: 4px;
+        right: 10px; }
     .about-info .containerskills .skills.HTML {
-      margin-top: -25px;
+      margin-top: -50px;
       font-size: 16px;
       font-weight: 700;
       color: #000;
@@ -342,7 +348,7 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
+      text-align: center;
       width: 90%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.HTML .skillslabel {
@@ -354,13 +360,13 @@ main {
         border-top: 0.5px solid #111;
         border-bottom: 0.5px solid #111;
         width: 110px;
-        height: 22px;
-        text-align: Center; }
+        height: 22px; }
         .about-info .containerskills .skills.HTML .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 1px; }
     .about-info .containerskills .skills.CSS {
-      margin-top: -25px;
+      margin-top: -50px;
       font-weight: 700;
       color: #000;
       animation: HTML 2s ease-out;
@@ -370,7 +376,7 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
+      text-align: center;
       width: 90%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.CSS .skillslabel {
@@ -384,12 +390,13 @@ main {
         border-bottom: 0.5px solid #111;
         width: 110px;
         height: 22px;
-        text-align: Center; }
+        text-align: left; }
         .about-info .containerskills .skills.CSS .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 35px; }
     .about-info .containerskills .skills.Javascript {
-      margin-top: -25px;
+      margin-top: -50px;
       font-weight: 700;
       color: #000;
       animation: JS 2s ease-out;
@@ -399,7 +406,7 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
+      text-align: center;
       width: 80%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.Javascript .skillslabel {
@@ -413,12 +420,13 @@ main {
         border-bottom: 0.5px solid #111;
         width: 110px;
         height: 22px;
-        text-align: Center; }
+        text-align: center; }
         .about-info .containerskills .skills.Javascript .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 2px; }
     .about-info .containerskills .skills.SEO {
-      margin-top: -25px;
+      margin-top: -50px;
       font-weight: 700;
       color: #000;
       animation: JS 2s ease-out;
@@ -428,7 +436,6 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
       width: 80%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.SEO .skillslabel {
@@ -442,12 +449,13 @@ main {
         border-bottom: 0.5px solid #111;
         width: 110px;
         height: 22px;
-        text-align: Center; }
+        text-align: left; }
         .about-info .containerskills .skills.SEO .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 33px; }
     .about-info .containerskills .skills.WordPress {
-      margin-top: -25px;
+      margin-top: -50px;
       font-weight: 700;
       color: #000;
       animation: HTML 2s ease-out;
@@ -457,7 +465,6 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
       width: 90%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.WordPress .skillslabel {
@@ -474,9 +481,10 @@ main {
         text-align: Center; }
         .about-info .containerskills .skills.WordPress .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 2px; }
     .about-info .containerskills .skills.Node {
-      margin-top: -25px;
+      margin-top: -50px;
       font-size: 16px;
       font-weight: 700;
       color: #000;
@@ -501,12 +509,13 @@ main {
         border-bottom: 0.5px solid #111;
         width: 110px;
         height: 22px;
-        text-align: Center; }
+        text-align: left; }
         .about-info .containerskills .skills.Node .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 18px; }
     .about-info .containerskills .skills.PHP {
-      margin-top: -25px;
+      margin-top: -50px;
       float: up;
       font-size: 16px;
       font-weight: 700;
@@ -518,7 +527,6 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
       width: 80%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.PHP .skillslabel {
@@ -532,12 +540,13 @@ main {
         border-bottom: 0.5px solid #111;
         width: 110px;
         height: 22px;
-        text-align: Center; }
+        text-align: left; }
         .about-info .containerskills .skills.PHP .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 32px; }
     .about-info .containerskills .skills.React {
-      margin-top: -25px;
+      margin-top: -50px;
       font-size: 13px;
       font-weight: 700;
       color: #000;
@@ -548,7 +557,6 @@ main {
       border-top: 1px solid #111;
       border-right: 1px solid #111;
       border-bottom: 1px solid #111;
-      text-align: right;
       width: 80%;
       background-color: #eece1a; }
       .about-info .containerskills .skills.React .skillslabel {
@@ -562,10 +570,11 @@ main {
         border-bottom: 0.5px solid #111;
         width: 110px;
         height: 22px;
-        text-align: Center; }
+        text-align: left; }
         .about-info .containerskills .skills.React .skillslabel p {
           position: relative;
-          bottom: 25px; }
+          bottom: 25px;
+          left: 26px; }
 
 @keyframes HTML {
   0% {
@@ -688,6 +697,19 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
+  .about-info .bio > p {
+    font-size: 23px; }
+  .about-info .icon1,
+  .about-info .icon2,
+  .about-info .icon3 {
+    font-size: 2em; }
+  .about-info .containerskills {
+    margin-left: 100px;
+    margin-right: 100px; }
+  .about-info .experience > h2 {
+    font-size: 2em; }
+  .nav-links > a {
+    font-size: 25px; }
   .menu {
     display: none; }
     .menu-btn {
@@ -699,6 +721,8 @@ main {
       font-size: 2em; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .nav-links > a {
+    font-size: 22px; }
   .menu {
     display: none; }
     .menu-btn {

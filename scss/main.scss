@@ -160,6 +160,12 @@ main {
     grid-area: skill;
     .skills {
       .baseskillbar {
+        p {
+          position: relative;
+          bottom: 4px;
+          right: 10px;
+        }
+        margin-top: -20px;
         height: 22px;
         text-align: right;
         border: 0.01px solid black;
@@ -172,11 +178,12 @@ main {
       }
 
       &.HTML {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 1px;
           }
           color: white;
           background: lighten($primary-color, 5);
@@ -187,7 +194,6 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
         }
 
         font-size: 16px;
@@ -200,17 +206,18 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
+        text-align: center;
         width: 90%;
         background-color: #eece1a;
       }
 
       &.CSS {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 35px;
           }
           padding-top: 0px;
           color: white;
@@ -222,7 +229,7 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
+          text-align: left;
         }
 
         font-weight: 700;
@@ -234,17 +241,18 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
+        text-align: center;
         width: 90%;
         background-color: #eece1a;
       }
 
       &.Javascript {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 2px;
           }
           padding-top: 0px;
           color: white;
@@ -256,7 +264,7 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
+          text-align: center;
         }
 
         font-weight: 700;
@@ -268,17 +276,18 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
+        text-align: center;
         width: 80%;
         background-color: #eece1a;
       }
 
       &.SEO {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 33px;
           }
           padding-top: 0px;
           color: white;
@@ -290,7 +299,7 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
+          text-align: left;
         }
 
         font-weight: 700;
@@ -302,17 +311,18 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
+
         width: 80%;
         background-color: #eece1a;
       }
 
       &.WordPress {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 2px;
           }
           padding-top: 0px;
           color: white;
@@ -336,17 +346,18 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
+
         width: 90%;
         background-color: #eece1a;
       }
 
       &.Node {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 18px;
           }
           padding-top: 0px;
           color: white;
@@ -358,7 +369,7 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
+          text-align: left;
         }
 
         font-size: 16px;
@@ -377,11 +388,12 @@ main {
       }
 
       &.PHP {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 32px;
           }
           padding-top: 0px;
           color: white;
@@ -393,10 +405,9 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
+          text-align: left;
         }
         float: up;
-
         font-size: 16px;
         font-weight: 700;
         color: #000;
@@ -407,17 +418,17 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
         width: 80%;
         background-color: #eece1a;
       }
 
       &.React {
-        margin-top: -25px;
+        margin-top: -50px;
         .skillslabel {
           p {
             position: relative;
             bottom: 25px;
+            left: 26px;
           }
           padding-top: 0px;
           color: white;
@@ -429,7 +440,7 @@ main {
           border-bottom: 0.5px solid #111;
           width: 110px;
           height: 22px;
-          text-align: Center;
+          text-align: left;
         }
 
         font-size: 13px;
@@ -442,7 +453,7 @@ main {
         border-top: 1px solid #111;
         border-right: 1px solid #111;
         border-bottom: 1px solid #111;
-        text-align: right;
+
         width: 80%;
         background-color: #eece1a;
       }

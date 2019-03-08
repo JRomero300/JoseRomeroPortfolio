@@ -1,5 +1,27 @@
 // Widescreens
 @include mediaXl {
+  .about-info {
+    .bio > p {
+      font-size: 23px;
+    }
+    .icon1,
+    .icon2,
+    .icon3 {
+      font-size: 2em;
+    }
+
+    .containerskills {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .experience > h2 {
+      font-size: 2em;
+    }
+  }
+  .nav-links > a {
+    font-size: 25px;
+  }
+
   .menu {
     display: none;
     &-btn {
@@ -18,6 +40,10 @@
 
 // Desktops & Laptops
 @include mediaLg {
+  .nav-links > a {
+    font-size: 22px;
+  }
+
   .menu {
     display: none;
     &-btn {
