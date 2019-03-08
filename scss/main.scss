@@ -176,7 +176,7 @@ main {
       font-weight: bold;
       color: #fff;
       line-height: 2.5;
-      z-index: 10000;
+      z-index: 1;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
       box-shadow: 2px 0 2px #333;
@@ -317,7 +317,7 @@ main {
   .container:hover .button {
     opacity: 1;
   }
-}
+} //--------endofprojects--------------------------------------------
 
 // Contact Page-----------------------------------------------------------
 .boxes {
