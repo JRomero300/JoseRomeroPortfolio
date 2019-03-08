@@ -1,4 +1,4 @@
-// Widescreens ---------------------------------------------------
+// Widescreens -----------------------------------------------------------------------------------------------------
 @include mediaXl {
   .about-info {
     .bio > p {
@@ -67,7 +67,7 @@
   }
 }
 
-// Tablets & Small Laptops -----------------------------------------
+// Tablets & Small Laptops -----------------------------------------------------------------------------------------------------------
 @include mediaMd {
   .nav {
     display: none;
@@ -139,18 +139,18 @@
 
     grid-template-columns: repeat(1, 1fr);
   }
-}
 
-.projects {
-  img {
-    height: 300px;
+  .projects {
+    img {
+      height: 300px;
+    }
+    .title {
+      font-size: 2em;
+      top: 30%;
+      left: 50%;
+    }
+    grid-template-columns: repeat(1, 1fr);
   }
-  .title {
-    font-size: 2em;
-    top: 30%;
-    left: 50%;
-  }
-  grid-template-columns: repeat(1, 1fr);
 }
 
 // Smartphones--------------------------------------------------------------------------------------------------
@@ -180,6 +180,12 @@
   }
 
   .about-info {
+    .containerskills .skills > .baseskillbar > p {
+      bottom: 1px;
+      left: 1px;
+      z-index: 1;
+    }
+
     grid-template-areas:
       "bioimage"
       "bio"
@@ -191,26 +197,11 @@
       "job1"
       "job2"
       "job3";
-
+    grid-template-columns: repeat(1, 1fr);
     .bio {
       text-align: center;
     }
-    grid-template-columns: repeat(1, 1fr);
-
-    .containerskills {
-      .skills {
-        position: relative;
-        bottom: -19px;
-      }
-
-      .baseskillbar > p {
-        font-size: 12px;
-        position: relative;
-        top: 2px;
-        right: 1px;
-      }
-    }
-  }
+  } //smartphone-about-infoEND
   .projects {
     .title {
       top: 40%;
@@ -219,4 +210,4 @@
     }
     grid-template-columns: 1fr;
   }
-}
+} //------------smartphoneEND
