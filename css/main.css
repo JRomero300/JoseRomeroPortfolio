@@ -524,8 +524,6 @@ main {
       display: none; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
-    .projects img {
-      height: 100%; }
     .projects .title {
       top: 20%;
       font-size: 25px; } }

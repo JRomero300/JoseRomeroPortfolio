@@ -42,7 +42,7 @@
   }
 }
 
-// Desktops & Laptops
+// Desktops & Laptops------------------------------------------------------
 @include mediaLg {
   .nav-links > a {
     font-size: 22px;
@@ -56,9 +56,6 @@
   }
 
   .projects {
-    img {
-      height: 100%;
-    }
     .title {
       top: 20%;
       font-size: 25px;
